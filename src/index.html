@@ -1,13 +1,225 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Davisginsburgdotcom</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <link rel="stylesheet" href="styles.css"/>
+  <head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  
+  <body class = "bg-dark text-white">
+    
+    <nav class="navbar sticky-top navbar-expand-md" style="background-color:black;">
+      <div class="container">
+        <a class="navbar-brand" href="#" style="color: red;">Davis Ginsburg</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto" >
+            <li class="nav-item">
+              <a class="nav-link" href="#back" style="color: yellow;">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#exp" style="color: yellow;">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proj" style="color: yellow;">Projects and Links</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#contact" style="color: yellow;">Contact</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- <div class="bg-light p-5 text-center">
+      
+      <div
+  class="bg-image d-flex justify-content-center align-items-center"
+  style="
+    background-image: url('https://images.unsplash.com/photo-1580584126903-c17d41830450?q=80&w=1939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    height: 100vh;">
+    <br><br><br><br>
+
+    <h1>Welcome to Davis Ginsburg's Website!</h1>
+      
+    </div>
+    </div> -->
+ 
+<section class="d-flex align-items-center justify-content-center text-white text-center px-3" style="min-height: 300px; position: relative; overflow: hidden;">
+  <!-- Background image -->
+  <img 
+    src="https://images.unsplash.com/photo-1580584126903-c17d41830450?q=80&w=1939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+    class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" 
+    style="z-index: 0;" 
+    alt="Banner background"
+  />
+
+  <!-- Frosted glass panel -->
+  <div class="position-relative z-2 px-5 py-3 rounded-4" style="background-color: rgba(0, 0, 0, 0.4); backdrop-filter: blur(8px);">
+    <h1 class="fw-bold">Welcome to Davis Ginsburg's Website!</h1>
+  </div>
+</section>
+
+<!-- <div
+  class="bg-image d-flex justify-content-center align-items-center text-white"
+  style="
+    background-image: url('https://images.unsplash.com/photo-1580584126903-c17d41830450?q=80&w=1939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    height: 100vh;
+    position: relative;
+  "
+>
+  <div style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+  <h1 style="z-index: 2; position: relative;">Welcome to Davis Ginsburg's Website!</h1>
+</div> -->
+    
+ <br />
+<div class="container">
+      <div class="row">
+       
+        <div class="col-md-7 frosted-glass p-5 rounded-4">
+          <div id="back"></div>
+          <br /><br />
+          <h2>About Me</h2>
+          <p>
+            I am a non-traditional student that already has one undergraduate
+            degree. In 2018, without a clear direction as to what I wanted to do, I graduated with a liberal
+            studies degree focusing on political science and history. I
+            proceeded to spend over 5 years working in eCommerce positions in
+            the hunting and fishing industry.
+          </p>
+          <div id="exp"></div>
+          <br /><br />
+          <div></div>
+        </div>
+
+        <div class="col-sm-5 p-5 rounded-4">
+          <img
+            src=" images/profile.jpg"
+            class="img-fluid rounded-4"
+            alt="Profile Image of
+          Davis"
+          />
+        </div>
+         <div class="container frosted-glass my-2 p-5 rounded-4">
+        <h2>My Experience</h2>
+        <ul>
+          <li>
+            Reeds Family Outdoor Outfitters, Walker, MN, eCommerce/Project
+            Manager (December 2021-Present)
+          </li>
+          <li>
+            Mel’s Sport Shop, Spicer, MN, Internet Administrator (March
+            2021–December 2021)
+          </li>
+          <li>
+            H&H Sport Shop, Maple Lake, MN, Sales (August 2018-March 2021)
+          </li>
+          <li>
+            Ginsburg Farms, Hector, MN, Farmhand (April 2011-November 2019)
+          </li>
+        </ul>
+        </div>
+        <div class="container frosted-glass my-2 p-5 rounded-4">
+        <h3>My Skills</h3>
+        <ul>
+          <li>
+            Languages: Assembly, C, C#, C++, CSS, HTML, Java, JSON, Micropython,
+            Python, TypeScript, VS Code
+          </li>
+          <li>E-Commerce Platforms: WordPress, Volusion, Gearfire, Magento</li>
+          <li>
+            Integrated Development Environments: NetBeans, Visual Studio 2022,
+            Visual Studio Code, Thonny, StackBlitz, MPLAB8
+          </li>
+          <li>
+            Communication and Coordination: Git/Github, Trello, Jira, Gmail,
+            Outlook, Microsoft Teams, Zoom, Discord
+          </li>
+          <li>Web Application Frameworks: Angular, Django</li>
+          <li>
+            Miscellaneous Software & Web Applications: Matlab, CircuitLab,
+            Microsoft Office
+          </li>
+        </ul>
+      </div>
+      <div id="proj"></div>
+      <br /><br />
+    
+       
+        
+         <div class="container frosted-glass my-2 p-5 rounded-4">
+           <h2>My Projects and Other Links</h2>
+          <div class="row">
+              <div class="col-sm-5">
+        <ul>
+          <li>
+            <a href="https://github.com/dlginsburg515">My Github Profile</a>
+          </li>
+          <li>
+            <a
+              href="https://ndusbpos-my.sharepoint.com/:v:/g/personal/davis_ginsburg_ndus_edu/EQMFK9zkIwdElh0n_3ftrDgBFJE-C-Nt60BRsRqMuATlCA?e=CxLexQ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D"
+              >DC and Servo Motor Controller with Video Demonstration</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://ndusbpos-my.sharepoint.com/:v:/g/personal/davis_ginsburg_ndus_edu/EZNIjhG9eDRGjnCflt-OETUBqELshgiX_AaGIzx3bWZnGQ?e=KVtuTI&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D"
+              >Morse Code Machines - Video Demonstartion of Three Versions</a
+            >
+          </li>
+        </ul>
+        </div>
+        <div class="col-sm-5">
+          <h6> Morse Code Machine Video</h>
+        <div class="embed-responsive embed-responsive-16by9">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/-BqHV_8Yg4Y?si=rqO4_xTLxmTVKK9S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </div>
+      </div>
+    </div>
+   
+    <!-- <div id="contact"></div>
+    <br /><br />
+    <div class="container frosted-glass my-5 p-5 rounded-4">
+      <h2 class="text-center">Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label class="form-Label">Name</label>
+          <input type="text" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label class="form-Label">Email</label>
+          <input type="email" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label class="form-Label">Message</label>
+          <textarea class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div> -->
+    <footer class="bg-dark text-white text-center p-3">
+      &copy; 2025 Davis Ginsburg's Website All Rights reserved.
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
