@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+        /* Stick it to the top */
+        left: 0;
+        /* Align to the left edge */
+        width: 100%;
+        /* Make it span the entire width */
+        z-index: 1000;
+        /* Ensure it stays on top of other content (adjust as needed) */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: red;
+}
+
+
+.logo-img {
+    width: 50px;
+    /* Adjust size */
+    height: auto;
+    background-color: transparent;
+}
+
+/*Company Name Styling */
+.companyName {
+    display: flex;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    float: right;
+
+}
+
+.nav-link {
+    color: #f50b0b;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #fcfcfd;
+    /* Darker blue color on hover */
+}
+
+.logout {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-danger {
+    background-color: #f30c0c88;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+}
+
+.btn-danger:hover {
+    background-color: #581209c2;
+}

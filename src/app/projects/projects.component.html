@@ -1,0 +1,30 @@
+<div class="container mt-4">
+    <h1 class="mb-4">Projects</h1>
+    <div>
+      <label for="search" class="form-label">Search: </label>
+      <input type='text' [(ngModel)]='input' (keyup)="sendInput()" />
+    </div>
+    <br>
+    <table class="table table-striped table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th (click)="sort('title')" [class.sort-asc]="sortColumn === 'title' && sortDirection === 'asc'" [class.sort-desc]="sortColumn === 'title' && sortDirection === 'desc'">Title</th>
+          <th (click)="sort('purpose')" [class.sort-asc]="sortColumn === 'purpose' && sortDirection === 'asc'" [class.sort-desc]="sortColumn === 'purpose' && sortDirection === 'desc'">Purpose</th>
+          <th (click)="sort('description')" [class.sort-asc]="sortColumn === 'description' && sortDirection === 'asc'" [class.sort-desc]="sortColumn === 'description' && sortDirection === 'desc'">Description</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let proj of filteredProjs; track proj.id">
+          <td>{{ proj.title }}</td>
+          <td>{{ proj.purpose }}</td>
+          <td>{{ proj.description }}</td>
+          
+          <!-- <td>
+            <button class="btn btn-sm btn-primary me-2" (click)="viewProject(project)">View</button> -->
+            
+          <!-- </td> -->
+        </tr>
+      </tbody>
+    </table>
+  </div>

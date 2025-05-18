@@ -1,0 +1,20 @@
+<header class="header">
+    <!-- Logo
+    <div class="logo">
+        @if (loggedIn()){
+      <button class = headerbtn routerLink = "dashboard"><img src="toolset.jpg" alt="Logo" class="logo-img" />
+      </button>
+    }
+    @else{
+        <img src="toolset.jpg" alt="Logo" class="logo-img" />
+    }
+    </div> -->
+    <img src="logo-v2.png" alt="Logo" class="logo-img" />
+
+    <nav class="nav-links">
+      <a [routerLink]="''" class="nav-link" >Home</a>
+      <a [routerLink]="'projects'" class="nav-link">Projects</a> <!--Add correct Inventory route here-->
+      <a [routerLink] = "'scheduling'" class="nav-link">Scheduling</a> <!--Add correct Schedule route here-->
+    </nav>
+  
+  </header>
